@@ -27,7 +27,7 @@
 #include "wx/socket.h"
 #include "global.h"
 #include "words.h"
-#include "logger.h"
+#include "logger/logger.h"
 #endif
 #include <fstream>
 #include <array>
