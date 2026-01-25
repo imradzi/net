@@ -1,3 +1,4 @@
+#include "project_common.h"
 /*
    base64.cpp and base64.h
 

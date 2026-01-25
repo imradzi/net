@@ -1,3 +1,4 @@
+#include "project_common.h"
 /* The MIT License
 
    Copyright (C) 2011 Zilong Tan (eric.zltan@gmail.com)

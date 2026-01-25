@@ -1,3 +1,4 @@
+#include "project_common.h"
 /*
  *  sha1.cpp
  *
