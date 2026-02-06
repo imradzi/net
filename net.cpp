@@ -78,7 +78,7 @@ std::string GetHostIP(const std::string &hostName) {
 
 
 std::string GetMD5name(const std::string &sql) {
-    LOG_INFO("GetMD5name: " + sql);
+    LOG_INFO("GetMD5name: {}",  sql);
     MD5 md5;
     md5.update((unsigned char*)sql.data(), sql.size());
     md5.finalize();
@@ -89,7 +89,7 @@ std::string GetMD5name(const std::string &sql) {
 }
 
 std::string GetMD5key(const std::string &sql) {
-    LOG_INFO("GetMD5key: " + sql);
+    LOG_INFO("GetMD5key: {}",  sql);
     MD5 md5;
     md5.update((unsigned char*)sql.data(), sql.size());
     md5.finalize();
@@ -100,7 +100,7 @@ std::string GetMD5key(const std::string &sql) {
 }
 
 std::string GetSHA1name(const std::string &sql) {
-    LOG_INFO("GetSHA1name: " + sql);
+    LOG_INFO("GetSHA1name: {}",  sql);
     SHA1 sha;
     unsigned int digest[5];
     sha.Reset();
@@ -118,7 +118,7 @@ std::string GetSHA1name(const std::string &sql) {
 }
 
 std::string GetSHA256name(const std::string &sql) {
-    LOG_INFO("GetSHA256name: " + sql);
+    LOG_INFO("GetSHA256name: {}",  sql);
     uint8_t digest[32];
     computeSHA256(sql.data(), sql.size(), digest);
     std::string res;
