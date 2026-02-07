@@ -127,7 +127,7 @@ std::string GetSHA256name(const std::string &sql) {
         res.append(hs);
     }
 
-#ifndef NDEBUG
+#ifdef _DEBUG
     {
         const char* s = "test";
         uint8_t digest[32];
